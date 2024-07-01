@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session Storage</title>
+</head>
+
+<body>
+    <script>
+        sessionStorage.setItem("name", "tajlli");
+        sessionStorage.setItem("address", "shiroli");
+        sessionStorage.setItem("education", "MSC TECH");
+        console.log(sessionStorage);
+
+        //  console.log(window);
+
+        let s = sessionStorage.getItem("name");
+        console.log(s);
+
+        sessionStorage.removeItem("address");
+    </script>
+</body>
+
+</html>

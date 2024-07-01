@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        // let name = "rahul";
+        // let age = 25;
+        // let add = "satara";
+        // console.log(name + " " + age + " " + add);
+
+        // let student = {
+        //     name:"radha",
+        //     address:"satara",
+        //     age:25
+        // }
+
+        // console.log(student);
+
+        // let student1 = {
+        //     name:"sagar",
+        //     address:"pune",
+        //     age:22
+        // }
+
+        // console.log(student1);
+
+        function Students(first, last, age, add, prof, id, mob,) {
+            this.firstname = first;
+            this.lastname = last;
+            this.age = age;
+            this.address = add;
+            this.profession = prof;
+            this.id = id;
+            this.mobileno = mob;
+
+        }
+
+        let newstudent = new Students("rashmika", "mandhana", 25, "sangli", "actress", 44, 9845652585);
+        console.log(newstudent);
+        let newstudent55 = new Students("reshma", "mandhana", 22, "satara", "actress", 45, 9848652585);
+        console.log(newstudent55);
+
+        newstudent.goal = "i am successfull engineer";
+        console.log(newstudent);
+
+        newstudent55.bloodgroup = "O+ve";
+        console.log(newstudent55);
+
+
+        newstudent55.fullname = function () {
+            return this.firstname + " " + this.lastname;
+        }
+
+        //  console.log(newstudent55.fullname());
+
+        document.getElementById("demo").innerHTML = newstudent55.fullname();
+    </script>
+</body>
+
+</html>

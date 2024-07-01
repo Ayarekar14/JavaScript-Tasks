@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Date_Method</title>
+</head>
+
+<body>
+    <div class="clock">
+        <h1 id="demo" style="text-align: center; color: red;"></h1>
+
+    </div>
+    <script>
+        setInterval(() => {
+
+            let x = new Date();
+            console.log(x);
+            document.getElementById("demo").innerHTML = x.getHours() + ":" + x.getMinutes() + ":" + x.getSeconds();
+
+
+
+        }, 10);
+
+
+    </script>
+
+</body>
+
+</html>

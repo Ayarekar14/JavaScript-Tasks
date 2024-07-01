@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let friends = ["neha", "samina", "tajalli", "indra", "anjali"];
+        console.log(friends);
+        console.log(friends.length);
+        console.log(friends.toString());
+
+        console.log(friends.push("radha"));
+        console.log(friends);
+
+        console.log(friends.pop());
+        console.log(friends);
+
+        console.log(friends.shift());
+        console.log(friends);
+        console.log(friends.unshift("neha"));
+        console.log(friends);
+
+        console.log(friends.join("----"));
+
+        console.log(delete friends[4]);
+        console.log(friends);
+
+        let name = ["raj"];
+
+        let color = ["red", "pink", "green", "white", "blue", "yellow"];
+        console.log(color);
+
+        console.log(friends.concat(" ", color, name));
+
+        let arr = [["raj", "sam"], ["pinki", "chinki"], ["remo", "demo"]];
+        console.log(arr);
+        console.log(arr.flat());
+
+        console.log(color.slice(2, 5));
+
+        console.log(color.splice(2, 2, "violet", "purple"));
+        console.log(color);
+
+
+    </script>
+</body>
+
+</html>

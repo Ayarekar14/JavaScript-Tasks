@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener 2</title>
+</head>
+
+<body>
+    <h2 id="para1"></h2>
+    <!-- <h2 id="para2"></h2>
+
+    <h2 id="para3"></h2> -->
+
+    <button id="demo">click</button>
+    <script>
+
+
+        document.getElementById("demo").addEventListener("mousemove", pranav);
+        document.getElementById("demo").addEventListener("click", paranali);
+        document.getElementById("demo").addEventListener("mouseleave", samiksha);
+
+
+
+        function pranav() {
+            document.getElementById("para1").innerHTML += "you enter mouse";
+        }
+
+        function paranali() {
+            document.getElementById("para1").innerHTML += "you click mouse";
+        }
+
+        function samiksha() {
+            document.getElementById("para1").innerHTML += "you leave mouse";
+        }
+
+    </script>
+</body>
+
+</html>

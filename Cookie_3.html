@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie 3</title>
+</head>
+
+<body>
+    <button onclick="addcookie()">add</button>
+    <button onclick="readcookie()">read</button>
+    <button onclick="clearcookie()">clear</button>
+
+    <script>
+        function addcookie() {
+
+            document.cookie = "item=bread";
+            document.cookie = "sub=physics";
+            document.cookie = "sport=cricket";
+        }
+
+        function readcookie() {
+            let d = document.cookie;
+            console.log(d);
+        }
+
+        function clearcookie() {
+            document.cookie = "item=";
+            document.cookie = "sub=";
+            document.cookie = "sport=";
+
+            console.log(document.cookie);
+        }  
+    </script>
+</body>
+
+</html>

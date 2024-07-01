@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body {
+            padding: 10px;
+
+        }
+
+        #container {
+            font-size: 70px;
+            text-align: center;
+            color: black;
+            text-shadow: 2px 2px 8px blue;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+
+        <span id="session">am</span>
+
+    </div>
+
+
+    <script>
+        setInterval(() => {
+
+            let time = new Date();
+            let hr = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+
+
+            if (hr >= 12) {
+                document.getElementById("session").innerHTML = "pm";
+            }
+
+            else {
+                document.getElementById("session").innerHTML = "am";
+            }
+
+            if (hr > 12) {
+                hr = hr - 12;
+            }
+
+            document.getElementById("hours").innerHTML = hr.toString().padStart(2, 0);
+            document.getElementById("minutes").innerHTML = min.toString().padStart(2, 0);
+            document.getElementById("seconds").innerHTML = sec.toString().padStart(2, 0);
+
+        }, 1000);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Target Method 3</title>
+</head>
+
+<body>
+    <p class="demo">this is para</p>
+    <a href="" class="demo">this is anchor</a>
+    <p class="demo">this is para2</p>
+    <h2 class="demo">this is heading2</h2>
+    <a href="" class="demo">this is anchor2</a>
+    <h1 class="demo">this is heading1</h1>
+    <button onclick="show()">click</button>
+
+    <script>
+        function show() {
+
+            let text = document.querySelectorAll(".demo");
+            console.log(text);
+            for (k = 0; k < text.length; k++) {
+                text[k].style.textShadow = "2px 2px 5px pink";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async and Await 2 </title>
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+    <h2 id="demo2"></h2>
+    <h3 id="demo3"></h3>
+    <h3 id="demo4"></h3>
+    <script>
+        async function atmosphere() {
+            let kopw = new Promise((resolve) => {
+                setTimeout(() => {
+
+                    resolve("Kolhapur : 21 deg");
+
+                }, 3000);
+            })
+
+            let sangw = new Promise((resolve) => {
+                setTimeout(() => {
+
+                    resolve("Sangli : 29 deg");
+
+                }, 6000);
+            })
+
+            document.getElementById("demo").innerHTML = ("fetching information please wait...");
+            document.getElementById("demo2").innerHTML = await kopw;
+
+            document.getElementById("demo3").innerHTML = "fetching information please wait...";
+            document.getElementById("demo4").innerHTML = await sangw;
+
+        }
+
+        atmosphere();
+    </script>
+</body>
+
+</html>

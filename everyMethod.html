@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Every Method</title>
+</head>
+
+<body>
+
+    <script>
+        let no = [45, 12, 65, 32, 98, 61, 34, 72, 53, 23, 71];
+        console.log(no);
+        let S = no.every((value) => {
+            return value > 85;
+        })
+
+        console.log(S);
+
+        let number = [45, 12, 65, 32, 98, 61, 34, 72, 53, 23, 71];
+        console.log(number);
+        let N = no.some((value) => {
+            return value > 85;
+        })
+
+        console.log(N);
+
+
+        let m1 = ["jan", "feb", "mar"];
+        let m2 = ["apr", "may", "june"];
+        let m3 = ["jully", "aug", "sep"];
+        let m4 = ["oct", "nov", "dec"];
+
+        console.log(m1);
+
+        console.log([...m1, ...m2, ...m3, ...m4]);
+
+
+    </script>
+
+</body>
+
+</html>

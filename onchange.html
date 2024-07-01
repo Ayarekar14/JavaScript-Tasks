@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnChange Event</title>
+</head>
+
+<body>
+
+    <select name="" id="demo" onchange="selectyear()">
+        <option value="selectyear" disabled>select year</option>
+        <option value="firstyear">first year</option>
+        <option value="secondyear">second year</option>
+        <option value="thirdyear">third year</option>
+        <option value="finalyear">final year</option>
+    </select>
+    <script>
+        function selectyear() {
+            let year = document.getElementById("demo").value;
+            alert("you selected :  " + year);
+        }
+    </script>
+</body>
+
+</html>

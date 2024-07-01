@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+</head>
+
+<body>
+    <script>
+        // //    Palindrome Number 
+
+        // let no, rem, pal = 0, c;
+        // no = parseInt(prompt("Enter No :"));
+        // c = no
+        // while (no > 0) {
+        //     rem = parseInt(no % 10);
+        //     pal = (pal * 10) + rem;
+        //     no = parseInt(no / 10);
+        // }
+        // if (c == pal) {
+        //     console.log("no is Palindrome.");
+        // }
+        // else {
+        //     console.log("no is not Palindrome.");
+        // }
+
+
+        // Armstrong Number 
+
+        let no, rem, arm = 0, c;
+        no = parseInt(prompt("Enter No : "));
+        c = no
+        while (no > 0) {
+            rem = parseInt(no % 10);
+            arm = (rem * rem * rem) + arm;
+            no = parseInt(no / 10);
+        }
+        if (c == arm) {
+            console.log("no is Armstrong.");
+        }
+        else {
+            console.log("no is not Armstrong");
+        }
+    </script>
+
+</body>
+
+</html>

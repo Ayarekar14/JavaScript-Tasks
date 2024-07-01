@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async & Await</title>
+</head>
+
+<body>
+    <h1 id="demo"></h1>
+
+    <script>
+        async function msg() {
+            let prom = new Promise(function (resolve, reject) {
+                setInterval(() => {
+
+                    resolve("Nothing is impossible, the word itself says I am possible...!")
+
+                }, 3000);
+
+            })
+            document.getElementById("demo").innerHTML = await prom;
+
+        }
+
+        msg();
+    </script>
+
+</body>
+
+</html>

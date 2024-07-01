@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure 2</title>
+</head>
+
+<body>
+    <script>
+        let sum = function (a, b, c) {
+            // console.log("hiii:");
+
+            return {
+
+                getsumoftwo: function () {
+                    return a + b;
+                },
+
+
+                getsumofthree: function () {
+                    return a + b + c;
+                }
+            }
+
+        }
+        let store = sum(25, 25, 25);
+        console.log(store.getsumoftwo());
+        console.log(store.getsumofthree());
+    </script>
+</body>
+
+</html>

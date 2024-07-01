@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>Display Output in List</h1>
+</head>
+
+<body>
+
+    <input type="text" id="textInput" placeholder="Enter text">
+    <button onclick="addItem()">Add to List</button>
+    <ul id="outputList"></ul>
+
+</body>
+
+<script>
+
+    function addItem() {
+
+        // Get the input value
+        var inputValue = document.getElementById('textInput').value;
+
+        // Get the output list element
+        var outputList = document.getElementById('outputList');
+
+        // Create a new list item
+        var newItem = document.createElement('li');
+
+        // Set the text of the new list item to the input value
+        newItem.textContent = inputValue;
+
+        // Append the new list item to the output list
+        outputList.appendChild(newItem);
+
+        // Clear the input box after adding the item
+        document.getElementById('textInput').value = '';
+    }
+
+</script>
+
+</html>

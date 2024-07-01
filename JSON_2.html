@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON 2</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            "name": "avinash",
+            "age": 25,
+            "married": true,
+            "fruits": {
+                mango: "summer",
+                apple: "all season",
+                strawbery: "winter",
+                pinaple: "summer"
+            },
+            "friends": [
+                "rahul", "shilpa", "akshay", "kajal", "ajay", "madhuri", "dr.nene"
+            ],
+
+            "car": null
+        }
+
+        console.log(student);
+        console.log(student.friends[5]);
+        console.log(student.fruits.mango);
+
+        let r = JSON.stringify(student);
+        console.log(r);
+
+        console.log(JSON.parse(r));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Target Method</title>
+</head>
+
+<body>
+
+    <p class="demo">this is paragraph</p>
+    <p class="demo">this is paragraph1</p>
+
+    <p class="demo">this is paragraph2</p>
+
+    <p class="demo">this is paragraph3</p>
+
+    <p class="demo">this is paragraph4</p>
+    <a href="" class="demo">this is anchor</a>
+    <button onclick="change()">click</button>
+
+    <script>
+        function change() {
+
+            let text = document.getElementsByClassName("demo");
+            console.log(text);
+
+            //    text[0].style.color = "red";
+            //    text[1].style.backgroundColor = "yellow";
+            //    text[2].style.fontFamily = "fantasy";
+
+            for (i = 0; i < text.length; i++) {
+                text[i].style.border = "1px dotted";
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

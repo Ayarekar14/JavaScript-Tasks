@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatypes in JS</title>
+</head>
+
+<body>
+    <script>
+        let str = "empty mind is devil workship";
+        console.log(str);
+        console.log(typeof (str));
+        let no = 25;
+        console.log(typeof (no));
+
+        let r = BigInt(123456789987654321);
+        console.log(r);
+        console.log(typeof (r));
+
+        let married = true;
+        console.log(typeof (married));
+
+        let car;
+        console.log(typeof (car));
+
+        let money = null;
+        console.log(typeof (money));
+
+        let t = Symbol("arya");
+        console.log(typeof (t));
+
+        let student = {
+            firstname: "rahul",
+            lastname: "patil",
+            age: 25,
+            address: "kop"
+        }
+        console.log(student);
+        console.log(typeof (student));
+
+        let fruits = ["mango", "banana", "watermelon", "strawbery", "apple"];
+        console.log(fruits);
+        console.log(typeof (fruits));
+
+        let date = new Date();
+        console.log(date);
+        console.log(typeof (date));
+
+        let v = 123e5;
+        let q = 123e-5;
+        console.log(v + " " + q);
+
+        let g = 100;
+        let y = "100";
+        if (g === y) {
+            console.log("both are equal");
+        }
+        else {
+            console.log("not equal");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+
+<body>
+    <script>
+        let person = {
+            "firstname": "rahul",
+            "lastname": "mehta",
+            "age": 25,
+            "address": "pune",
+            "eyecolor": "black",
+            "designation": "manager",
+            "id": 555
+
+
+        }
+
+        console.log(person.lastname + " " + person.age);
+        console.log(person);
+
+        let newjson = JSON.stringify(person);
+        console.log(newjson);
+
+        let r = newjson.replace("rahul", "akshay");
+        console.log(r);
+
+        let t = newjson.toUpperCase();
+        console.log(t);
+
+        let g = JSON.parse(newjson);
+        console.log(g);
+
+
+    </script>
+</body>
+
+</html>

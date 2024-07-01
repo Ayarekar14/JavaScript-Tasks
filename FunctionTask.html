@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Task</title>
+</head>
+
+<body>
+    <script>
+        function checkpalindrome(str) {
+            let formatstring = str.toLowerCase().replace(/[0-9]/g, " ");
+            let reversestring = formatstring.split('').reverse().join('');
+
+            return formatstring == reversestring;
+
+        }
+
+        let teststring1 = "racecar";
+        let teststring2 = "Hello Neha How Are You ?";
+        let teststring3 = "amanaplanacanalpanama";
+
+        console.log("the palindrome value is:", checkpalindrome(teststring1));
+        console.log("the palindrome value is:", checkpalindrome(teststring2));
+        console.log("the palindrome value is:", checkpalindrome(teststring3));
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove event listener</title>
+    <style>
+        #mydiv {
+            height: 500px;
+            width: 500px;
+            background-color: aqua;
+
+        }
+
+        p {
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="demo"></p>
+    <div id="mydiv">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora nihil, sapiente quas corporis
+            necessitatibus adipisci dicta ab molestiae aperiam officia ipsam magni dignissimos numquam facere!</p>
+        <button onclick="stop()">remove</button>
+    </div>
+    <script>
+        document.getElementById("mydiv").addEventListener("mousemove", lara);
+        function lara() {
+            document.getElementById("demo").innerHTML = Math.random();
+        }
+
+        function stop() {
+
+
+            document.getElementById("mydiv").removeEventListener("mousemove", lara);
+
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure 1</title>
+</head>
+
+<body>
+    <script>
+        let sum = function (a) {
+            //console.log("hello:" + a);
+
+            let c = 10
+
+            return function (b) {
+                return a + b + c;
+            }
+        }
+
+        let text = sum(2);
+        console.log(text(5));
+    </script>
+</body>
+
+</html>

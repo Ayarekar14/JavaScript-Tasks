@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inp Task</title>
+</head>
+
+<body>
+    <script>
+        let name = ["indra", "neha", "nikhil", "samina", "tajalli", "anjali", "rahul", "pooja"];
+        console.log(name);
+
+        let text = "a";
+
+        let arr = new Array();
+
+
+        for (let i = 0; i < name.length; i++) {
+            let count = 0;
+
+            for (let j = 0; j < name[i].length; j++) {
+                if (name[i][j] === text) {
+                    count++;
+                }
+            }
+            if (count === 1) {
+                arr.push(name[i]);
+            }
+        }
+
+        console.log(arr);
+    </script>
+</body>
+
+</html>

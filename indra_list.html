@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output List</title>
+    <h1>Display Output in List</h1>
+</head>
+
+<body>
+    <input type="text" id="demo" placeholder="Enter Text">
+    <button onclick="dislist()">Click</button>
+    <ul id="neha">
+
+    </ul>
+
+    <script>
+        let arr = [];
+        function dislist() {
+            let x = document.getElementById("demo").value;
+            arr.push(x);
+
+            let showlist = '';
+
+            for (let i = 0; i < arr.length; i++) {
+                showlist += `<li>${arr[i]}</li>`;
+            }
+
+            document.getElementById("neha").innerHTML = showlist;
+            document.getElementById('demo').value = '';
+        }
+    </script>
+</body>
+
+</html>

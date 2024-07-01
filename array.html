@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in JavaScript</title>
+</head>
+
+<body>
+    <input type="text" id="inp">
+    <button onclick="show()">Click</button>
+    <script>
+        let car = ["mahindra", "swift", "maruti", "BMW", "ertiga", "thar", "toyota", "benz"];
+        console.log(car);
+        console.log(car[0]);
+        console.log(car[5]);
+
+        car[2] = "creta";
+        console.log(car);
+
+        for (i = 0; i < car.length; i++) {
+
+        }
+
+        let a = [];
+        a[0] = 25;
+        a[1] = 45;
+        a[2] = 65;
+        console.log(a);
+
+        let arr = [];
+
+        function show() {
+            let target = document.getElementById("inp").value;
+
+            arr.push(target);
+            target = "";
+
+            console.log(arr);
+
+        }
+
+        let arr1 = new Array("ved", "kgf", "ravan", "ddlj");
+        console.log(arr1);
+
+
+
+    </script>
+</body>
+
+</html>

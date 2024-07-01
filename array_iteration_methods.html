@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array iteration methods</title>
+</head>
+
+<body>
+    <script>
+        let actor = ["salman", "amir", "akshay", "sharukh", "sanjay", "boby", "tiger"];
+        console.log(actor);
+        console.log(actor[0]);
+        console.log(actor[5]);
+
+        // for(i=0;i<actor.length;i++)
+        // {
+        //     console.log(i + " " + actor[i]);
+        // }
+
+        //   actor.forEach(function(value){
+        //        console.log(value);
+        //   })
+
+        //   actor.forEach((value,index,array)=>{
+        //         console.log(value);
+        //   })
+
+        // let no = [25,45,65,85,78,98,5,42,13,6,4];
+        // no.forEach((value,index)=>{
+        //     console.log(index + " " + value);
+        // })
+
+        // map method
+
+
+        //  let no = [45,65,25,45,87,98,65,42,31,45,6,87,58,9];
+        //  console.log(no);
+        // let newno =  no.map((value,index)=>{
+        //       return value * 10;
+
+        //  })
+
+        //  console.log(newno);
+
+        //  filter method
+
+        let ages = [58, 45, 5, 25, 47, 89, 86, 5, 42, 13, 6, 54, 47, 89, 9, 8];
+        console.log(ages);
+
+        let agesover58 = ages.filter((value, index) => {
+
+            return value > 58
+
+        })
+
+        console.log(agesover58);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obj To Loc</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            name: "ramesh",
+            address: "kop",
+            city: "satara",
+            mobno: 9845652545
+        }
+
+        console.log(student);
+
+        localStorage.setItem("student", JSON.stringify(student));
+
+        console.log(localStorage);
+
+        let newstr = localStorage.getItem("city");
+        let newjson = JSON.parse(newstr);
+        console.log(newjson);
+
+    </script>
+</body>
+
+</html>

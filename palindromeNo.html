@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Number</title>
+</head>
+
+<body>
+    <script>
+        let no, rem, c, s = 0;
+        no = parseInt(prompt("enter no:"));
+        c = no;
+        while (no > 0) {
+            rem = parseInt(no % 10);
+            s = (s * 10) + rem;
+            no = parseInt(no / 10);
+        }
+
+        if (c == s) {
+            console.log("No is Palindrome");
+        }
+        else {
+            console.log("No is not Palindrome");
+        }
+    </script>
+</body>
+
+</html>

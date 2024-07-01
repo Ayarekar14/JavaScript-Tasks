@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise 3</title>
+</head>
+
+<body>
+    <script>
+        function enjoy(married) {
+            return new Promise(function (resolve, reject) {
+
+
+                setTimeout(() => {
+
+                    if (married) {
+                        resolve("restriction");
+                    }
+                    else {
+                        reject("bindhast");
+                    }
+
+                }, 5000);
+
+            })
+        }
+
+        let success = (result) => {
+            console.log(result);
+        }
+
+        let rejection = (error) => {
+            console.log(error);
+        }
+
+        enjoy(false).then(success).catch(rejection) 
+    </script>
+</body>
+
+</html>

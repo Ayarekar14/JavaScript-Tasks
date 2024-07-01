@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg Expression</title>
+</head>
+
+<body>
+    <script>
+        //  using simply string search method 
+
+        let text = "welcome to javascript";
+        console.log(text);
+        let result = text.search("javascript");
+        console.log(result);
+
+        //  //using reg exp
+        let char = "dont underestimate the power of common man";
+        console.log(char);
+        let res = char.search(/power/i);
+        console.log(res);
+
+        //  using string replace method
+        //  let name = "igap technology";
+        //  console.log(name);
+        //  let institute = name.replace("technology","education");
+        //  console.log(institute);
+
+        //  //using reg exp
+        let colddrinks = "cococola";
+        console.log(colddrinks);
+        let cold = colddrinks.replace(/cococola/, "thumsup");
+        console.log(cold);
+
+        //    //function to match expression
+        //    //1) exec()-
+
+        let str = "the great rohit sharma rohit s ";
+        console.log(str);
+        let reg = /rohit/g;
+
+        //  console.log(str);
+        let output = reg.exec(str);
+        console.log(output);
+        //console.log(output);
+        r = reg.exec(str);
+        console.log(r);
+        r = reg.exec(str);
+        console.log(r);
+
+        //    //2) test() It searches a string for a pattern, and returns true or false, depending on the result.
+
+        let s = "i am an indian ";
+        let t = /am/;
+        console.log(s);
+        let w = t.test(s);
+        console.log(w);
+
+        //   //3) match()-it will return an array of result or null
+        // let str1 = "rohit sharma is a famous cricketor also famous captain also it is famous person is very famous   famous";
+        // let reg1 = /famous/g;
+        // console.log(str1);
+        // let sport = str1.matchAll(reg1);        // ulta chalana padata hai
+        // console.log(Array.from(sport, match => match[0]))
+
+
+
+        //4)search() return index of first match else -1;
+        let g = "welcome to worlds of programming or worlds of coding";
+        let rg = /parent/g;
+        // console.log(g);
+        //  //                               //wrong ulta chalana padata hai
+        let rs = g.search(rg);
+        console.log(rs);
+
+        //5) replace()- returned new replaced string will all he replacement(if no golbal flag is given then first match will be replaced)
+        let player = " dhoni is a best captain in world also dhoni excellent wicketkeeper dhoni";
+        reg = /dhoni/g;
+        console.log(player);
+        let rep = player.replace(reg, "mahi");  //ulta chalana padata hai
+        console.log(rep);
+    </script>
+</body>
+
+</html>

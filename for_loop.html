@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for_loop</title>
+</head>
+
+<body>
+    <script>
+
+        // // Fibonacci Series
+
+        // let no, a = 0, b = 1, c, i;
+        // no = prompt("Enter No :");
+        // for (i = 1; i <= no; i++) {
+        //     console.log(a);
+        //     c = a + b;
+        //     a = b;
+        //     b = c;
+        // }
+
+        // // Star Pattren
+
+        // let i, j;
+        // let text = "";
+        // for (i = 1; i <= 5; i++) {
+        //     for (j = 1; j <= i; j++) {
+        //         text += "*";
+        //     }
+        //     text += "\n";
+        // }
+        // console.log(text);
+
+        // Star Pyramid Pattern (Triangle)
+
+        let i, j, k, no;
+        let text = "";
+        no = prompt("enter no:");
+        for (i = 1; i <= no; i++) {
+            for (j = no; j >= i; j--) {
+                text += " ";
+            }
+            for (k = 1; k <= i; k++) {
+                text += " *";
+            }
+            text += "\n";
+        }
+
+        console.log(text);
+
+    </script>
+
+</body>
+
+</html>

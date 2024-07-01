@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving</title>
+</head>
+
+<body>
+    <button onclick="bulbon()">turn on light</button>
+
+    <img src="assets/images/shinchan.jpeg" alt=" " id="myimage">
+
+    <button onclick="bulboff()">tun off light</button>
+    <script>
+
+        function bulbon() {
+            document.getElementById("myimage").src = "assets/images/pic_shinchan_start.gif";
+        }
+
+        function bulboff() {
+            document.getElementById("myimage").src = "assets/images/shinchan.jpeg";
+
+        }
+
+    </script>
+</body>
+
+</html>

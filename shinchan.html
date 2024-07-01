@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinchan</title>
+</head>
+
+<body>
+
+    <button onclick="start()">START</button>
+
+    <img src="assets/images/pic_shinchan_start.gif" alt="" id="myimage">
+
+    <button onclick="end()">END</button>
+
+    <script>
+
+        function start() {
+            document.getElementById("myimage").src = "pic_shinchan_end.gif";
+        }
+
+        function end() {
+            document.getElementById("myimage").src = "pic_shinchan_start.gif";
+        }
+    </script>
+
+</body>
+
+</html>

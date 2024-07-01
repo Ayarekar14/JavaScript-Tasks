@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduce_Method</title>
+</head>
+
+<body>
+
+    <script>
+        let no = [12, 45, 32, 65, 98, 75, 25, 36, 57, 61, 28];
+        console.log(no);
+        let newno = no.reduce(function (value, index) {
+            return value / index;
+        })
+        console.log(newno);
+
+
+        let num = [12, 15, 13, 17, 19, 24, 36, 75, 32, 12, 55, 89, 32, 187, 23];
+        console.log(num);
+        let x = num.reduce((value, index) => {
+            return value / index;
+
+        })
+
+        console.log(x);
+
+    </script>
+
+</body>
+
+</html>

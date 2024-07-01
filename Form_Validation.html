@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation in JS</title>
+    <style>
+        #container {
+            text-align: center;
+            margin: 10px;
+            border: 1px solid;
+            background-color: wheat;
+            color: black;
+        }
+
+        button {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <form action="" onsubmit="return validateform()">
+
+            <h1>Form Validation</h1>
+
+            <input type="text" name="" id="username" placeholder="Enter username"><br>
+            <span id="usererror"></span><br>
+            <input type="text" name="" id="password" placeholder="Enter password"><br>
+            <span id="passerror"></span><br>
+            <button>click</button>
+
+        </form>
+    </div>
+
+    <script>
+
+        let flag = 1
+        function validateform() {
+
+
+            //  return true;
+
+            let username = document.getElementById("username");
+            let password = document.getElementById("password");
+
+            if (username.value == "") {
+                document.getElementById("usererror").innerHTML = "username is empty";
+                document.getElementById("usererror").style.color = "red";
+                flag = 0;
+            }
+            else if (username.value.length < 3) {
+                document.getElementById("usererror").innerHTML = "username require minimum three char";
+                document.getElementById("usererror").style.color = "red";
+                flag = 0;
+            }
+            else {
+                document.getElementById("usererror").innerHTML = "";
+                flag = 1
+            }
+
+            if (password.value == "") {
+                document.getElementById("passerror").innerHTML = "password is empty";
+                document.getElementById("passerror").style.color = "red";
+                flag = 0;
+            }
+            else {
+                document.getElementById("passerror").innerHTML = "";;
+                flag = 1
+
+            }
+
+            if (flag) {
+
+                if (username.value || password.value == flag) {
+                    alert("validation successfull");
+                }
+                return true;
+
+            }
+            else {
+
+                return false;
+
+
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

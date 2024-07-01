@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Move Task</title>
+
+    <style>
+        #largediv {
+            height: 400px;
+            width: 400px;
+            background-color: yellow;
+            position: relative;
+        }
+
+        #smalldiv {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="largediv">
+        <div id="smalldiv">
+
+
+        </div>
+    </div>
+    <button onclick="start()">click</button>
+    <script>
+        function start() {
+            let target = document.getElementById("smalldiv");
+            let pos = 0;
+            let r = setInterval(() => {
+
+                pos++;
+
+
+                if (pos == 350) {
+                    clearInterval(r)
+                }
+
+
+                // console.log(pos);
+                else {
+
+                    target.style.top = pos + "px";
+                    target.style.left = pos + "px";
+
+                }
+
+
+
+            }, 10);
+        }
+    </script>
+</body>
+
+</html>

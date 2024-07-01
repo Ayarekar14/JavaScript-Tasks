@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback Function</title>
+</head>
+
+<body>
+    <script>
+        // function msg(some)
+        // {
+        //     console.log(some);
+        // }
+
+        // function calculate(no1,no2)
+        // {
+        //     let add = no1 + no2;
+        //     return add;
+        // }
+
+        // let result = calculate(5,15);
+        // console.log(msg(result));
+
+        //    or
+        //   function msg(some)
+        // {
+        //     console.log(some);
+        // }
+
+        // function calculate(no1,no2)
+        // {
+        //     let add = no1 + no2;
+        //     msg(add)
+        // }
+
+        //  calculate(5,15);
+
+
+        function remo(some) {
+            console.log(some);
+        }
+
+        function addition(no1, no2, callback) {
+            let sum = no1 + no2;
+            callback(sum);
+
+        }
+
+        addition(25, 25, remo);
+
+    </script>
+</body>
+
+</html>
